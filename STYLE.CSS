@@ -1,0 +1,300 @@
+/* Navigation */
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: #005599;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* NAV BUTTONS */
+nav button{
+    flex: 1;
+    padding: 14px;
+    border: none;
+    color: white;
+    background: #005599;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav button:hover{
+    background: #003366;
+}
+
+/* DROPDOWN CONTAINER */
+.dropdown {
+    flex: 1;
+    position: relative;
+}
+
+/* DROPDOWN BUTTON */
+.dropbtn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: #005599;
+    color: white;
+    cursor: pointer;
+}
+
+/* MEGA MENU */
+.mega-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    background: white;
+    padding: 20px;
+
+    display: none;
+    justify-content: space-around;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+/* SHOW DROPDOWN */
+.dropdown:hover .mega-menu {
+    display: flex;
+}
+
+/* COLUMNS */
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* LINKS */
+.column a {
+    color: black;
+    text-decoration: none;
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.column a:hover {
+    color: #005599;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;   /* centers page with margin */
+}
+.header-section {
+    position: relative;
+    text-align: center;
+    color: rgb(249, 252, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 20px;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+/* Background layer */
+.header-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #003366;
+    transform: scale(1.1);          /* prevents edges cutting after blur */
+
+    z-index: -1;
+}
+.date{
+    color:rgb(242, 6, 6)
+}
+.tab {
+    display: none;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ONLY active tab should show */
+.tab.active {
+    display: block;
+}
+/* FORM BOX */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* GROUP */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* INPUTS */
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* FILE INPUT */
+input[type="file"] {
+    padding: 5px;
+}
+
+/* BUTTON */
+.column button {
+    width: 30%;
+    padding: 12px;
+    background: #003366;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #001f4d;
+}
+/* MAIN WRAPPER (multiple profiles) */
+.committee {
+    display: flex;
+    flex-direction: column;   /* 🔥 makes profiles one below another */
+    gap: 25px;
+}
+
+/* EACH PROFILE */
+.profile-section {
+    display: flex;           /* 🔥 image left, text right */
+    align-items: center;
+    gap: 30px;
+
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* IMAGE */
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* TEXT */
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h2 {
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.profile-info p {
+    line-height: 1.6;
+}
+.contactcon{
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+.datescon{
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+.schedulecon{
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+.papercon{
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+.Submissioncon{
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+.plagcon{
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+.reviewcon{
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+.policycon{
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+.regpolcon{
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+.withdrawcon{
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+.presentcon{
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+.certificatecon{
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+.camcon{
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+.publiccon{
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+.organizer {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* keeps it centered */
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.organizer img {
+    width: 60px;   /* adjust size */
+    height: auto;
+}
+
+.organizer p {
+    margin: 0;
+    font-weight: bold;
+}
+.footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 30px;
+}
